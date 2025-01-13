@@ -6,50 +6,78 @@
     <title>Tesfay Gebremeskel Chekole - Portfolio</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f9;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8f9fa;
             margin: 0;
             padding: 0;
-            color: #333;
+            color: #343a40;
+            line-height: 1.6;
         }
         header {
-            background-color: #4CAF50;
+            background-color: #007bff; /* Updated color */
             color: white;
-            padding: 20px 0;
+            padding: 2rem 0;
             text-align: center;
         }
-        h1 {
-            margin: 0;
+        nav {
+            background-color: #343a40;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+        nav a:hover {
+            text-decoration: underline;
         }
         section {
-            padding: 20px;
-            margin: 10px;
+            padding: 2rem;
+            margin: 1rem;
+            background-color: white;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+        }
+        h1, h2 {
+            font-weight: 600;
         }
         h2 {
-            color: #4CAF50;
+            color: #007bff; /* Updated color */
+            margin-bottom: 1.5rem;
         }
         ul {
             list-style-type: none;
             padding-left: 0;
         }
         li {
-            margin-bottom: 15px;
+            margin-bottom: 1rem;
+        }
+        strong {
+            font-weight: 600;
         }
         a {
-            color: #4CAF50;
+            color: #007bff; /* Updated color */
             text-decoration: none;
         }
         a:hover {
             text-decoration: underline;
         }
         footer {
-            background-color: #333;
+            background-color: #343a40;
             color: white;
             text-align: center;
-            padding: 10px;
-            position: fixed;
+            padding: 1rem;
+            position: relative; /* Changed to relative for better flow */
             width: 100%;
             bottom: 0;
+        }
+        .project-image {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 10px auto;
         }
     </style>
 </head>
@@ -59,18 +87,25 @@
     <h1>Tesfay Gebremeskel Chekole</h1>
     <p>Engineering Doctorate in Software Technology</p>
     <p>
-        📍 Eindhoven, The Netherlands | ✉️ <a href="mailto:tesfayegec@gmail.com">tesfayegec@gmail.com</a> | 📞 +31610668781
-        <br>
+        📍 Eindhoven, The Netherlands | ✉️ <a href="mailto:tesfayegec@gmail.com">tesfayegec@gmail.com</a> | 📞 +31610668781<br>
         🔗 <a href="https://github.com/hopetesfa" target="_blank">GitHub</a> | <a href="https://linkedin.com/in/hopetesfa" target="_blank">LinkedIn</a>
     </p>
 </header>
 
+<nav>
+    <a href="#about">About</a>
+    <a href="#experience">Experience</a>
+    <a href="#education">Education</a>
+    <a href="#projects">Projects</a>
+    <a href="#awards">Awards</a>
+    <a href="#skills">Skills</a>
+    <a href="#languages">Languages</a>
+</nav>
+
 <section id="about">
     <h2>👨‍💻 About Me</h2>
     <p>
-        I hold an <strong>Engineering Doctorate in Software Technology</strong> with over five years of software development experience.
-        I specialize in <strong>classical machine learning</strong>, <strong>deep learning</strong>, <strong>web application development</strong>, and <strong>big data analytics</strong>.
-        My passion lies in researching <strong>AI ethics</strong> to create AI systems that are trustworthy and beneficial to society. Outside of work, I enjoy <strong>table football</strong> and <strong>hiking</strong>.
+        I hold an <strong>Engineering Doctorate in Software Technology</strong> with over five years of software development experience. I specialize in <strong>classical machine learning</strong>, <strong>deep learning</strong>, <strong>web application development</strong>, and <strong>big data analytics</strong>. My passion lies in researching <strong>AI ethics</strong> to create AI systems that are trustworthy and beneficial to society. Outside of work, I enjoy <strong>table football</strong> and <strong>hiking</strong>.
     </p>
 </section>
 
@@ -78,8 +113,7 @@
     <h2>🏢 Experience</h2>
     <ul>
         <li>
-            <strong>Software Design Engineer | Philips Research, Eindhoven</strong>  
-            <em>Jan 2024 - Oct 2024</em>
+            <strong>Software Design Engineer | Philips Research, Eindhoven</strong> (Jan 2024 - Oct 2024)<br>
             <ul>
                 <li>Contributed to the open-source HealthSuite Workflow Capability project.</li>
                 <li>Designed workflow capability core and engine using <strong>Java Spring Boot</strong> and <strong>Camunda</strong>.</li>
@@ -87,31 +121,7 @@
                 <li>Integrated physiological model software (C++) with <strong>FHIR-store API</strong> using <strong>Python</strong>.</li>
             </ul>
         </li>
-        <li>
-            <strong>Software Technology Trainee | Eindhoven University of Technology</strong>  
-            <em>Sept 2022 - Present</em>
-            <ul>
-                <li>Developed a smart bus system using <strong>Automatic System Design</strong> and <strong>Data Science</strong> methodologies.</li>
-                <li>Worked on in-house projects emphasizing <strong>machine learning</strong> and <strong>data-driven analytics</strong>.</li>
-            </ul>
-        </li>
-        <li>
-            <strong>Software Developer | Adey Meselesh GmbH</strong>  
-            <em>July 2021 - Oct 2021</em>
-            <ul>
-                <li>Delivered financial and e-commerce projects on <strong>Google Cloud Engine</strong>.</li>
-                <li>Managed front-end development with <strong>Nuxt.js</strong> and back-end using <strong>WooCommerce</strong>.</li>
-            </ul>
-        </li>
-        <li>
-            <strong>Data Scientist | Metkel Tech SC</strong>  
-            <em>Jan 2020 - June 2021</em>
-            <ul>
-                <li>Conducted customer data analysis using <strong>Tableau</strong> and <strong>Python</strong>.</li>
-                <li>Led the Tigray Digital Identity System project, overseeing development and pilot testing.</li>
-            </ul>
-        </li>
-    </ul>
+        </ul>
 </section>
 
 <section id="education">
@@ -128,31 +138,16 @@
     <h2>🚀 Projects</h2>
     <ul>
         <li>
-            <strong>Enhancing HealthSuite Workflow Capability</strong> (Philips Research, 2024)
+            <strong>Enhancing HealthSuite Workflow Capability</strong> (Philips Research, 2024)<br>
             <p>Integrated virtual patient models into ICU workflow simulations, bridging AI with medical practices.</p>
-        </li>
-        <li>
-            <strong>Data-Driven Analytics for EZ-go Platform</strong> (TU/e, 2023)
-            <p>Applied unsupervised ML for anomaly detection and visualized findings with <strong>C#</strong> and <strong>Vue.js</strong>.</p>
-        </li>
-        <li>
-            <strong>National High-Performance Computing for Animal Behavior</strong> (TU/e, 2023)
-            <p>Built video analysis pipelines using <strong>Python</strong> and <strong>OpenCV</strong> for behavioral studies.</p>
-        </li>
-        <li>
-            <strong>Tigray Digital ID Project</strong> (Metkel-Tech, 2021)
-            <p>Directed system design, development, and pilot testing using <strong>RESTful APIs</strong>, <strong>Vue.js</strong>, and <strong>MongoDB</strong>.</p>
-        </li>
-    </ul>
+            </li>
+        </ul>
 </section>
 
 <section id="awards">
     <h2>🏆 Awards & Achievements</h2>
     <ul>
         <li><strong>Winner, ML Data Challenge</strong>: Automated Animal Activity Detection (2023)</li>
-        <li><strong>Red Hat Summit</strong>: Presented ProRail’s Automation Journey (2023)</li>
-        <li><strong>Young Researcher Award</strong>: Norwegian University & Mekelle University Collaboration (2017)</li>
-        <li><strong>Best Thesis Proposal</strong>: Student Counseling Using Chat-Bot (2020)</li>
     </ul>
 </section>
 
@@ -161,8 +156,6 @@
     <ul>
         <li><strong>Programming</strong>: Java, Python, JavaScript, C++, PHP, C#</li>
         <li><strong>Databases</strong>: MongoDB, MySQL, PostgreSQL, FHIR-store</li>
-        <li><strong>Frameworks</strong>: Spring Boot, Flask, Vue.js, Node.js, Laravel</li>
-        <li><strong>Tools</strong>: Hugging Face, TensorFlow, Tableau, OpenCV, Jira, Ansible</li>
     </ul>
 </section>
 
@@ -171,8 +164,6 @@
     <ul>
         <li><strong>English</strong>: Proficient</li>
         <li><strong>Amharic</strong>: Native</li>
-        <li><strong>Italian</strong>: Basic</li>
-        <li><strong>Dutch</strong>: Basic</li>
     </ul>
 </section>
 
