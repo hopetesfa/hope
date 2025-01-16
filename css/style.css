@@ -138,10 +138,12 @@ li {
     color: #777;
     font-size: 0.9em;
     margin-bottom: 10px;
-} .timeline {
+} 
+.timeline {
     position: relative;
     margin: 2rem 0;
     padding-left: 2rem;
+    list-style: none;
 }
 
 .timeline::before {
@@ -153,10 +155,9 @@ li {
     width: 4px;
     background: #007bff;
 }
-
 .timeline-event {
     position: relative;
-    margin-bottom: 2rem;
+    margin-bottom: 20px;
 }
 
 .timeline-dot {
@@ -208,6 +209,53 @@ li {
     left: 0;
     font-size: 1.25rem;
     line-height: 1;
+}
+
+.timeline-content ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.timeline-content ul li {
+    margin-bottom: 0.5rem;
+    padding-left: 1rem;
+    position: relative;
+}
+
+.timeline-content ul li::before {
+    content: "•";
+    color: #007bff;
+    position: absolute;
+    left: 0;
+    font-size: 1.25rem;
+    line-height: 1;
+}
+.timeline {
+    position: relative;
+    padding: 0;
+    list-style: none;
+}
+
+.timeline-event {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.timeline-dot {
+    position: absolute;
+    top: 0;
+    left: -5px;
+    width: 10px;
+    height: 10px;
+    background-color: #007bff;
+    border-radius: 50%;
+}
+
+/* Removed duplicate .timeline-content styles */
+
+.timeline-content ul ul {
+    padding-left: 20px;
 }
 .education-timeline {
     position: relative;
